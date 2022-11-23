@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script src="../global.js" defer></script>
+    <script src="../escapeHTML.js" defer></script>
+    <script src="./dashboard.js" defer></script>
+</head>
+<body>
+
+<!----- navigation buttons ------>
+<nav>
+    <a href="../dashboard/dashboard.html"><button>Dashboard</button></a>
+    <a href="../result/result.html"><button>Results</button></a>
+</nav>
+
+<!---------- headline --------->
+<h1>Ærøs valg!</h1> <img src="../flag.gif" alt="ærø flag"  width="126"/>
+
+<!----- party selection + edit button ------>
+<select id="party-selector" name="parties">
+    <option value="A">Socialdemokratiet</option>
+    <option value="B">Radikale Venstre</option>
+    <option value="C">Det Konservative Folkeparti</option>
+    <option value="F">Socialistisk Folkeparti</option>
+    <option value="M">Ærø i Centrum</option>
+    <option value="O">Dansk Folkeparti</option>
+    <option value="P">ÆrøPlus</option>
+    <option value="V">Venstre</option>
+    <option value="Æ">Ærøs Fremtid</option>
+</select>
+<button id="btn-edit-candidates" value="read">🔧</button>
+
+<!----- table for parties ------>
+<h2 id="party-letter"></h2>
+<table id="party-table">
+    <thead>
+    <tr>
+        <td>Navn</td>
+        <td>Stemmer</td>
+    </tr>
+    </thead>
+    <tbody id="party-table-body"></tbody>
+</table>
+
+</body>
+</html>
